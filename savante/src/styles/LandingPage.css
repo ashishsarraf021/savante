@@ -1,5 +1,5 @@
 /* src/styles/LandingPage.css */
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap");
 
 .landing-page {
   margin: 0;
@@ -17,7 +17,7 @@
 }
 
 .brand-name {
-  font-family: 'Red Hat Text', sans-serif;
+  font-family: "Red Hat Text", sans-serif;
   font-weight: bold;
   font-size: 30px;
 }
@@ -29,7 +29,7 @@
 .header-options {
   margin: 0 40px;
   cursor: pointer;
-  font-family: 'Red Hat Text', sans-serif;
+  font-family: "Red Hat Text", sans-serif;
   font-weight: bold;
   font-size: 16px;
   transition: transform 0.2s ease, opacity 0.2s ease;
@@ -44,75 +44,249 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: calc(100vh - 120px); Adjust height to account for the header */
 }
 
 .up-body {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
-  text-align: center; /* Center text */
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center;
   margin-top: 60px;
 }
 
-.tag-line {
-  font-family: 'Red Hat Text', sans-serif;
+.tag-line,
+.third-tag-line,#one,.fifth-tag-line,#three{
+  font-family: "Red Hat Text", sans-serif;
   font-weight: bold;
   font-size: 70px;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
-.second-tag-line {
-  font-family: 'Red Hat Text', sans-serif;
+.second-tag-line,
+.fourth-tag-line,#two{
+  font-family: "Red Hat Text", sans-serif;
   font-weight: normal;
   font-size: 20px;
   color: #555;
 }
-.buttons{
-    display: flex;
-    align-items: center;
-    gap: 25px; 
-    margin-top: 20px;
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 20px;
 }
 .button {
-    font-family: 'Red Hat Text', sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 15px 30px;
-    border: 3px solid black; 
-    border-radius: 10px;
-    background-color: #313031;
-    cursor: pointer;
-    box-shadow: 4px 4px 0 black;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    margin-top: 10px;
-    background-color:#f7e2da ;
-    width: 230px;
-  }
-  
-  .button:hover {
-    transform: translateY(-3px);
-    box-shadow: 8px 8px 0 black;
-  }
-  
-  .button:active {
-    transform: translateY(-3px);
-    box-shadow: 8px 8px 0 black;
-  }
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 15px 30px;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: #313031;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 black;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-top: 10px;
+  background-color: #f7e2da;
+  width: 230px;
+}
 
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 8px 8px 0 black;
+}
 
-  .video-container {
-    border: 6px solid black;
-    width: 975px;
-    height: 550px;
-    border-radius: 10px;
-    background-color: #303030;
-    margin-top: 75px;
-  }
-  
-  .video {
-    position: relative;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-  }
+.button:active {
+  transform: translateY(-3px);
+  box-shadow: 8px 8px 0 black;
+}
+
+.video-container {
+  border: 6px solid black;
+  width: 975px;
+  height: 550px;
+  border-radius: 10px;
+  background-color: #303030;
+  margin-top: 75px;
+}
+
+.video {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+
+.third-tag-line{
+  margin-top: 100px;
+  font-size: 55px;
+}
+
+.data,
+.data3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.data{
+  margin: 0 191px;
+  margin-top: 70px;
+  gap: 25px;
+}
+.data2 {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-align: center;
+}
+
+#one{
+  font-size: 50px;
+}
+#two{
+  font-size: 16px;
+}
+.data4{
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 18px;
+  color: #555;
+  font-weight: normal;
+}
+.fifth-tag-line{
+  margin-top: 100px;
+  font-size: 50px;
+}
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 125px;
+}
+
+.logo {
+  width: 125px; 
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.logo:hover {
+  filter: none;
+}
+
+.influencers-card {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden; 
+  gap: 16px; 
+  padding: 16px; 
+  scroll-behavior: smooth; 
+  width: 85vw; 
+}
+
+.influencers-card::-webkit-scrollbar {
+  height: 8px;
+}
+
+.influencers-card::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+.influencers-card::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.card {
+  flex: 0 0 auto;
+  margin: 0 8px; 
+  width: 200px;
+}
+
+.custom-solutions {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  margin-top: 100px;
+  padding: 20px; 
+  gap: 100px;
+}
+
+.custom1 {
+  flex: 1;
+  margin-right: 20px; 
+}
+
+.custom2 {
+  flex: 1; 
+  background-color: #f7e2da; 
+  background-size: cover; 
+  background-position: center; 
+  height: 370px; 
+  border-radius: 10px; 
+  width: 600px;
+}
+#custom-solution{
+  background-image: url('https://unicorn-cdn.b-cdn.net/5f0b6a7e-d7ed-4f62-8c3f-7cfcb3faff12/ewalle-illustration-1.png');
+}
+#dedicated-support{
+  background-image: url('https://unicorn-cdn.b-cdn.net/9e1005bf-5705-4ab8-be91-b764ca4a6469/ewalle-illustration-2.png?width=1185&height=849');
+}
+#one {
+  font-size: 24px; /* Adjust font size */
+  font-weight: bold; /* Bold text */
+}
+
+#two {
+  font-size: 16px; /* Adjust font size */
+  color: #555; /* Text color */
+}
+
+#three{
+  font-size: 50px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #222322;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-company h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.footer-company p {
+  margin: 5px 0;
+  font-size: 0.875em;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
