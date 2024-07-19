@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/LandingPage.css";
 import Card from "./Card";
+import { useNavigate } from 'react-router-dom';
 
 // Importing SVGs from the src/assets/logos directory
 import aavraniLogo from "../assets/logos/aavrani-logo@logotyp.us.svg";
@@ -38,6 +39,15 @@ import disneyLogo from "../assets/logos/disney-logo@logotyp.us.svg";
 import timHortonsLogo from "../assets/logos/tim-hortons-logo@logotyp.us.svg";
 
 const LandingPage = () => {
+  const navigate = useNavigate();
+
+  const handleStartAsInfluencer = () => {
+    navigate('/signup/influencer');
+  };
+
+  const handleJoinAsBrand = () => {
+    navigate('/signup/brand');
+  };
   const sampleUrl =
     "https://buzzfame.in/wp-content/uploads/2023/11/instagram-influencer-Foodaholic-Tn.jpg";
   const sampleName = "Foodaholic TN";
@@ -66,8 +76,8 @@ const LandingPage = () => {
             AI-driven platform.
           </div>
           <div className="buttons">
-            <button className="button">Start as Influencer</button>
-            <button className="button">Join as Brand</button>
+            <button className="button" onClick={handleStartAsInfluencer}>Start as Influencer</button>
+            <button className="button" onClick={handleJoinAsBrand}>Join as Brand</button>
           </div>
           <div className="video-container">
             <iframe
@@ -343,6 +353,10 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-company">

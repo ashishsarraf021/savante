@@ -11,6 +11,7 @@
   font-family: "Red Hat Text", sans-serif;
   font-weight: normal;
   font-size: 16px;
+  color: #555;
 }
 
 .tag-line {
@@ -18,7 +19,6 @@
   font-weight: bold;
   font-size: 50px;
   margin-bottom: 20px;
-  color: #313031;
 }
 
 .second-tag-line {
@@ -54,6 +54,11 @@
   flex: 1;
 }
 
+.input-group label {
+  /* margin-bottom: 5px; */
+  /* font-weight: bold; */
+}
+
 .input-group input,
 .input-group select,
 .input-group textarea {
@@ -82,9 +87,9 @@
   outline: none; /* Removes the default focus outline */
 }
 
-#audienceDescription{
+/* #audienceDescription{
   width: 660px;
-}
+} */
 
 .input-group input:active,
 .input-group select:active,
@@ -191,15 +196,8 @@
   cursor: pointer;
 }
 
-/* Media query for responsive design */
-@media (max-width: 768px) {
-  .row {
-    flex-direction: column;
-  }
-  .details{
-    align-items: center;
-  }
-  #audienceDescription{
-    width: 290px;
+@media (max-width: 768px){
+  .landing-page{
+    width: 100vb;
   }
 }
