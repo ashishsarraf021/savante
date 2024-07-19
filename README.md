@@ -1,6 +1,4 @@
-Here's a detailed README file for setting up the React project to create the landing page and sign-up pages for Savante:
 
----
 
 # Savante React Project
 
